@@ -21,12 +21,13 @@ This is a side project to search Taiwan books
 目前預計開發Chrome Extension app，技術棧採用：
 
 - 前端
-    - Angular
+    - Angular + Typescript
 - 後端
-    - Python
+    - Python with Django
 
 
 # References
 
 1. https://isbn.ncl.edu.tw/NEW_ISBNNet/
 2. https://developer.chrome.com/docs/extensions/mv3/getstarted/
+3. https://developer.mozilla.org/zh-TW/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Angular_getting_started
