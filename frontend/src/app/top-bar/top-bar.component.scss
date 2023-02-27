@@ -1,0 +1,20 @@
+h1 {
+  color: white;
+  padding: 10px;
+}
+
+div {
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.search input {
+  width: 300px;
+}
+
+button.search {
+  background-color: rgb(250, 247, 247);
+  color: rgb(0, 0, 0);
+}
