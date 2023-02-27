@@ -26,4 +26,9 @@ describe('TopBarComponent', () => {
     let inputEle = fixture.nativeElement.querySelector(`input[class='search']`);
     expect(inputEle).toBeTruthy();
   });
+
+  it('should create search button', () => {
+    let btnEle = fixture.nativeElement.querySelector(`button[class='search']`);
+    expect(btnEle).toBeTruthy();
+  });
 });
