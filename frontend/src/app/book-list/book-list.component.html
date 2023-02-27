@@ -1,0 +1,37 @@
+<mat-grid-list cols="3" rowHeight="470px">
+  <mat-grid-tile *ngFor="let book of books" rowspan="1">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ book.title }}</mat-card-title>
+          <mat-card-subtitle
+            ><b>{{ book.author }}</b></mat-card-subtitle
+          >
+          <mat-card-subtitle *ngIf="book.translator"
+            >譯者：{{ book.translator }}</mat-card-subtitle
+          >
+          <mat-card-subtitle *ngIf="book.category"
+            >類別：{{ book.category }}</mat-card-subtitle
+          >
+          <mat-card-subtitle *ngIf="book.publisher"
+            >出版者：{{ book.publisher }}</mat-card-subtitle
+          >
+          <mat-card-subtitle *ngIf="book.date"
+            >日期：{{ book.date | date }}</mat-card-subtitle
+          >
+          <mat-card-subtitle *ngIf="book.price"
+            >價格：{{ book.price | currency }}</mat-card-subtitle
+          >
+          <img
+            mat-card-lg-image
+            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+          />
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>{{ book.introduction }}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
