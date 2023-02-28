@@ -1,4 +1,4 @@
-<mat-grid-list cols="3" rowHeight="470px">
+<mat-grid-list [cols]="cols" rowHeight="470px">
   <mat-grid-tile *ngFor="let book of books" rowspan="1">
     <mat-card class="example-card">
       <mat-card-header>
