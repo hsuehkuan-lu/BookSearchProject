@@ -64,17 +64,17 @@ describe('BookListComponent', () => {
   });
 
   it('should create mat-grid-list', () => {
-    let matGridListEle = fixture.nativeElement.querySelector(`mat-grid-list`);
+    const matGridListEle = fixture.nativeElement.querySelector(`mat-grid-list`);
     expect(matGridListEle).toBeTruthy();
   });
 
   it('should create mat-grid-tile', () => {
-    let matGridTileEle = fixture.nativeElement.querySelector(`mat-grid-tile`);
+    const matGridTileEle = fixture.nativeElement.querySelector(`mat-grid-tile`);
     expect(matGridTileEle).toBeTruthy();
   });
 
   it('should create 3 cards', () => {
-    let matGridTileEle = fixture.debugElement.queryAll(By.css('mat-card'));
+    const matGridTileEle = fixture.debugElement.queryAll(By.css('mat-card'));
     expect(matGridTileEle.length).toEqual(3);
   });
 });

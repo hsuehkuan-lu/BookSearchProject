@@ -23,12 +23,16 @@ describe('TopBarComponent', () => {
   });
 
   it('should create search input', () => {
-    let inputEle = fixture.nativeElement.querySelector(`input[class='search']`);
+    const inputEle = fixture.nativeElement.querySelector(
+      `input[class='search']`
+    );
     expect(inputEle).toBeTruthy();
   });
 
   it('should create search button', () => {
-    let btnEle = fixture.nativeElement.querySelector(`button[class='search']`);
+    const btnEle = fixture.nativeElement.querySelector(
+      `button[class='search']`
+    );
     expect(btnEle).toBeTruthy();
   });
 });
