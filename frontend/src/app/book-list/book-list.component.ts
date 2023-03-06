@@ -22,7 +22,7 @@ interface Book {
 export class BookListComponent implements OnInit {
   books: Book[] = BookJson;
 
-  cols: number = 4;
+  cols = 4;
 
   gridByBreakpoint = {
     xl: 4,
